@@ -4,6 +4,10 @@ console.log(listacognomi);
 
 // Chiedo il cognome all'utente
 var cognomeutente = String(prompt('Per favore inserisci il tuo cognome'));
+
+// trasforma la prima in maiuscolo visto che il mio array ha le iniziali dell stringhe in maiuscolo
+var cognomeutente = cognomeutente.charAt(0).toUpperCase() + cognomeutente.slice(1);
+
 console.log(cognomeutente);
 
 // Inserisco il cognome nella lista dei cognomi già presenti
