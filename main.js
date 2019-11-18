@@ -5,7 +5,7 @@ console.log(listacognomi);
 // Chiedo il cognome all'utente
 var cognomeutente = prompt('Per favore inserisci il tuo cognome');
 
-// trasforma la prima in maiuscolo visto che il mio array ha le iniziali delle stringhe in maiuscolo
+// trasforma la prima in maiuscolo visto che il mio array ha le iniziali delle stringhe in maiuscolo altrimenti il sort fallisce
 var cognomeutente = cognomeutente.charAt(0).toUpperCase() + cognomeutente.slice(1);
 console.log(cognomeutente);
 
@@ -24,4 +24,4 @@ for (var posizione = 0; (posizione < listacognomi.length) && (!trovato); posizio
         trovato = true;
     }
 }
-console.log("Il cognome dell'utente si trova nella posizione numero " + (posizione + 1) + " della lista");
+console.log("Il cognome dell'utente si trova nella posizione numero " + posizione + " della lista");
