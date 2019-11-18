@@ -3,15 +3,15 @@ var listacognomi = ['Rossi', 'Bianchi', 'Celentano', 'Morandi'];
 console.log(listacognomi);
 
 // Chiedo il cognome all'utente
-var cognomeutente = prompt('Per favore inserisci il tuo cognome');
+var cognomeutente = String(prompt('Per favore inserisci il tuo cognome'));
 console.log(cognomeutente);
 
 // Inserisco il cognome nella lista dei cognomi già presenti
-listacognomi = listacognomi.concat(cognomeutente);
+listacognomi.push(cognomeutente);
 console.log(listacognomi);
 
 // Ordiniamo la lista dei cognomi
-listacognomi = listacognomi.sort(function(a,b){return a - b});
+listacognomi.sort();
 console.log(listacognomi);
 
 // Troviamo la posizione del cognome fornito dall'utente e la stampiamo
