@@ -5,7 +5,7 @@ console.log(listacognomi);
 // Chiedo il cognome all'utente
 var cognomeutente = prompt('Per favore inserisci il tuo cognome');
 
-// trasforma la prima in maiuscolo visto che il mio array di cognomi creato ha le iniziali delle stringhe in maiuscolo altrimenti il sort fallisce
+// trasforma il  primo carattere del cognome inserito in maiuscolo visto che il mio array di cognomi creato ha le iniziali delle stringhe in maiuscolo altrimenti il sort fallisce
 var cognomeutente = cognomeutente.charAt(0).toUpperCase() + cognomeutente.slice(1);
 console.log(cognomeutente);
 
