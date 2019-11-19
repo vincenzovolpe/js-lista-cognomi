@@ -38,6 +38,10 @@ do {
                 trovato = true;
             }
         }
+
+        /* Versione alternativa ricerca posizione
+        var posizione = listacognomi.indexOf(cognomeutente);
+        console.log(posizione + 1); */
     }
 } while (risposta);
 
